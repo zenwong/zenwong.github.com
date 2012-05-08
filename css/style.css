@@ -1,3 +1,33 @@
 body{
-  margin: 0;
+  margin: 0px;
+  background-color: #bf4330;
+}
+
+.rounded{
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin: 300px 20px;
+  border: 5px solid black;
+  background-color: white;
+}
+
+.circle {
+ background-color: #c06;
+ border: 3px solid #333;
+ height: 150px;
+ -moz-border-radius:75px;
+ -webkit-border-radius: 75px;
+ width: 150px;
+}
+
+#info{
+}
+#work{
+}
+#skills{
+}
+#contact{
 }
