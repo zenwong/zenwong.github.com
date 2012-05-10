@@ -74,7 +74,27 @@
     </div>
 
   </body>
+  <script src="domready.js"></script>
+  <script src="ajax.js"></script>
   <script>
+    function addEvent(element, evnt, funct){
+      if (element.attachEvent)
+      return element.attachEvent('on'+evnt, funct);
+      else
+      return element.addEventListener(evnt, funct, false);
+    }
+
+    domReady(function(){
+	var skills = document.getElementById('skills');
+	addEvent(skills, 'click', function(){
+	  ajax({
+	    method: 'GET',
+	    url: 'index.html',
+	    data: null
+	  }, 'right');
+	});
+
+    });
 
   </script>
 </html>
