@@ -1,0 +1,25 @@
+.left-side{
+  width: 50%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  z-index: 2;
+  background: #555;
+}
+.right-side{
+  width: 51%;
+  height: 100%;
+  right: 0px;
+  top: 0px;
+  position: absolute;
+  z-index: 3;
+  background: #555;
+}
+#center{
+  position: absolute;
+  z-index: 100;
+  font-size: 350px;
+  font-family: 'IM Fell English';
+}
+

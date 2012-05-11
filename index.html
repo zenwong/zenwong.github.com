@@ -11,8 +11,28 @@
     <div class="rounded" id="contact"></div>
 
     <div class="circle"></div>
+    <div id="log"></div>
 
+  </body>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="/js/main.js"></script>
-  </body>
+    <script src="/js/skills.js"></script>
+
+    <script>
+
+      function dump(data){
+	for(var k in data){
+	  var v = data[k];
+	  document.getElementById('log').innerHTML += k + ': ' + v + '<br>';
+	}
+      }
+
+      $(document).ready(function(){
+	//document.getElementById('log').innerHTML = JSON.stringify(skills);
+	//console.log(skills);
+	dump(skills);
+      });
+
+
+    </script>
 </html>
