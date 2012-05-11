@@ -1,4 +1,10 @@
-/** GENERAL **/
+@font-face {
+  font-family: 'IM Fell English';
+  font-style: normal;
+  font-weight: normal;
+  src: local('IM FELL English Roman'), local('IM_FELL_English_Roman'), url('http://themes.googleusercontent.com/static/fonts/imfellenglish/v3/xwIisCqGFi8pff-oa9uSVMyhYfqH3mbn79-t0w0Xep4.woff') format('woff');
+}
+
 body {
   font-family: Verdana, sans-serif;
   min-height: 740px;
@@ -6,11 +12,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/** STEP STYLES **/
 section {
   width: 900px;
-  height: 400px;
-  font-size: 1em;
+  height: 500px;
+  font-size: 30px;
   min-height: 500px;
 
   background: #222;
@@ -28,8 +33,6 @@ section {
   color: rgb(102, 102, 102);
   text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
-  letter-spacing: -1px;
-
   -webkit-box-sizing: border-box;
   -moz-box-sizing:    border-box;
   -ms-box-sizing:     border-box;
@@ -43,9 +46,41 @@ section {
   transition:         opacity 1s;
 }
 
-/** NOT SUPPORTED STYLES **/
 .not-supported section {
   position: relative;
   opacity: 1;
   margin: 20px auto;
+}
+
+.left-side{
+  width: 50%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  z-index: 2;
+  background: #555;
+}
+.right-side{
+  width: 51%;
+  height: 100%;
+  right: 0px;
+  top: 0px;
+  position: absolute;
+  z-index: 3;
+  background: #555;
+}
+#center{
+  position: absolute;
+  z-index: 100;
+  font-size: 350px;
+  font-family: 'IM Fell English';
+  color: #222;
+  text-shadow: 0px 2px 3px #555;
+}
+#hint{
+  z-index: 1000;
+  font-size: 20px;
+  position: absolute;
+  bottom: 30px;
 }
