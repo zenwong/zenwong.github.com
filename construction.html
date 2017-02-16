@@ -1,7 +1,74 @@
-<html>
-	<body>
-		<img src="construction.gif" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sphere Group</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="icon" href="./img/favicon-32.png">
+    <style>
+        * {
+            text-align: center;
+            font-family: 'Helvetica', 'Arial', 'sans-serif';
+        }
+        .logo {
+            margin-top: 80px;
+        }
+        .company h1 {
+            font-size: 21px;
+            margin-bottom: 0;
+        }
+        .company sub {
+            color: grey;
+            font-size: 14px;
+        }
+        .info {
+            margin-top: 40px;
+        }
+        .info ul li {
+            font-size: 14px;
+            display: inline-block;
+            padding-right: 40px;
+        }
+        .info ul li:nth-child(even) {
+            opacity: 0.2;
+        }
+        .footer-text {
+            font-size: 14px;
 
-	</body>
+        }
+        @media screen
+        and (min-width: 0px)
+        and (max-width: 600px) {
+            .info ul li {
+                font-size: 12px;
+                padding-right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
 
+    <div class="logo">
+    <img src="./img/logo-sphere-grp.png">
+    </div>
+
+    <div class="company">
+        <h1>Sphere Group</h1>
+        <sub>under construction!</sub>
+    </div>
+
+    <div class="info">
+        <ul>
+            <li>Property</li>
+            <li>|</li>
+            <li>Management</li>
+            <li>|</li>
+            <li>Consultant</li>
+        </ul>
+        <p class="footer-text">
+        enquiries: <a href="mailto:zoey@spheregrp.com">zoey@spheregrp.com</a>
+        </p>
+    </div>
+
+</body>
 </html>
