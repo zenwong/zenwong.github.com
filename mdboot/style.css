@@ -59,6 +59,10 @@ footer.page-footer {
   color: black;
 }
 
+.card-text {
+	color: black;
+}
+
 a.anchor {
   padding: 60px;
   margin-top: -60px;
